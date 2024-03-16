@@ -50,4 +50,4 @@ class Text2ImageAPI:
                 # print('[api] : generating image...')
 
             attempts -= 1
-            asyncio.sleep(delay)
+            await asyncio.sleep(delay)
