@@ -1,3 +1,4 @@
+
 from aiogram import F, Router
 from aiogram.filters import Command
 from aiogram.filters import StateFilter
@@ -29,7 +30,7 @@ async def cmd_help(message: Message, state: FSMContext):
     await message.answer(
         text="/generate - создать портрет эпохи\n\n"
         "Этот бот был создан для хакатона Почтовое: Digital\n"
-        "Исходный код: https://github.com/egoros7/postalbot\n"
+        "[Исходный код](https://github.com/egoros7/postalbot)\n"
         "Использованы данные Цифрового корпуса почтовых открыток «Пишу тебе». URL: https://pishutebe.ru/",
         reply_markup=ReplyKeyboardRemove()
     )
