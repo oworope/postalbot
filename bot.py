@@ -20,8 +20,6 @@ async def main():
     # Если не указать storage, то по умолчанию всё равно будет MemoryStorage
     # Но явное лучше неявного =]
     dp = Dispatcher(storage=MemoryStorage())
-    # Для выбора другой стратегии FSM:
-    # dp = Dispatcher(storage=MemoryStorage(), fsm_strategy=FSMStrategy.CHAT)
     bot = Bot(config.bot_token.get_secret_value())
 
     dp.include_routers(common.router, generate.router)
