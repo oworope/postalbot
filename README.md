@@ -7,7 +7,7 @@
 handlers - обработчики команд
 keyboards - простая клавиатура с кнопками
 bot.py - основной файл
-api.py - работа с Kandisky
+api.py - работа с Kandinsky
 ```
 
 ## Запуск
